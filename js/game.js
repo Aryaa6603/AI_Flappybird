@@ -38,7 +38,7 @@ var reset = function (nextGen) {
 		lowerPipes = [new Pipe(spd, 480+240, 400), new Pipe(spd, 240, 550), new Pipe(spd, 480, 460)];
 		return;
 	}
-	difficulty=-40;
+	difficulty=-80;
 	birds = [];
 	savedBirds = [];
 	for(var i = 0; i<varietyOfBirds.length; i++) {
@@ -163,7 +163,7 @@ ctr = 0;
 var main = function () {
 	var now = Date.now();
 	var delta = now - then;
-	update(delta / 1000);
+	update(delta / 800);
 		render();
 	ctr++;
 	then = now;
